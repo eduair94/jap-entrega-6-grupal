@@ -30,12 +30,12 @@ form.addEventListener(
   "submit",
   function (event) {
     console.log("Envio");
-    event.preventDefault();
     form.classList.add("was-validated");
     enable_tos_validation = true;
     check_tos(document.getElementById("terminos"));
     if (!form.checkValidity()) {
       event.stopPropagation();
+      event.preventDefault();
     }
   },
   false,
