@@ -33,6 +33,7 @@ form.addEventListener(
     console.log("Envio");
     form.classList.add("was-validated");
     enable_tos_validation = true;
+    check_password();
     check_tos(document.getElementById("terminos"));
     if (!form.checkValidity()) {
       event.stopPropagation();
