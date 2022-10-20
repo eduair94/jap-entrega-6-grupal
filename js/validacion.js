@@ -1,6 +1,7 @@
 const form = document.getElementById("form");
 
-function check_password(password2) {
+function check_password() {
+  const password2 = document.getElementById("password2");
   const password1 = document.getElementById("password1");
   if (password2.value === password1.value && password1.checkValidity()) {
     password2.setCustomValidity("");

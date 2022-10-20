@@ -45,7 +45,8 @@
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
-              <input minlength="6" required type="password" id="password1" class="form-control">
+              <input minlength="6" oninput="check_password()" required type="password" id="password1"
+                class="form-control">
               <div class="invalid-feedback">
                 Debe ingresar una contraseña con al menos 6 caracteres
               </div>
@@ -53,7 +54,7 @@
 
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input minlength="6" oninput="check_password(this)" required type="password" class="form-control"
+              <input minlength="6" oninput="check_password()" required type="password" class="form-control"
                 id="password2">
               <div class="invalid-feedback">
                 Debe ser igual a "contraseña"
